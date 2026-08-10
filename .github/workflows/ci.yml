@@ -29,7 +29,7 @@ jobs:
           API_TOKEN: "test-token-cua-lab"
           REDIS_URL: "fake://"
         run: |
-          pytest tests/ --ignore=tests/test_cp5.py --ignore=tests/test_bonus_cicd.py -v
+          pytest tests/test_cp1.py tests/test_cp2.py tests/test_cp3.py tests/test_cp4.py --ignore=tests/test_cp5.py -v
 
       - name: Build Docker Image
         run: |
